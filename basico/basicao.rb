@@ -29,15 +29,6 @@ end
 puts soma(2,2)
 puts soma 3,3
 
-# IF
-a,b = 1,2
-
-if a > b
-    puts "A é maior que B"
-else
-    puts "B é maior que A"
-end
-
 # Variáveis (referência e valor)
 # No exemplo abaixo farei a variável "b" apontar para a "a",
 # o que eu fizer na "b", na vdd estou fazendo no valor da "a"
