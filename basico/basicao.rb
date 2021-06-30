@@ -20,7 +20,7 @@ puts texto
 puts texto.strip!
 puts texto
 
-# funcoes
+# funcoes (não precisamos usar return, a def sempre devolve a última linha implementada)
 def soma(a,b)
     a+b
 end
@@ -37,3 +37,18 @@ if a > b
 else
     puts "B é maior que A"
 end
+
+# Variáveis (referência e valor)
+# No exemplo abaixo farei a variável "b" apontar para a "a",
+# o que eu fizer na "b", na vdd estou fazendo no valor da "a"
+a = "FRASE"
+b = a
+b.downcase!
+puts a
+
+# Já com a variável "c", estou pegando o mesmo valor de "a" e 
+# atribuindo para "c", o que eu fizer em "c" não afeta "a"
+c = a.clone
+c.upcase!
+puts c
+puts a
