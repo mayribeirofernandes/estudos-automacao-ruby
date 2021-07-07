@@ -1,5 +1,8 @@
 # Nomes de classes são CamelCase
 class Carro
+    # constante da classe
+    MODELOS_DISPONIVEIS = ["Fusion", "Tucson", "Sportage"]
+
     # accessors leitura e escrita (substitui os defs set e get que fiz abaixo para a "marca")
     attr_accessor :marca, :modelo
 
@@ -55,3 +58,6 @@ carro = Carro.new("Corsa", "Chevrolet")
 
 puts carro.marca
 puts carro.modelo
+
+# Acessando constantes sem criar o objeto
+puts Carro::MODELOS_DISPONIVEIS
